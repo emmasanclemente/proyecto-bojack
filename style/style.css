@@ -1,0 +1,927 @@
+/* style.css */
+
+body {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.body-index{
+    background: linear-gradient(180deg, #e9c296, #db81a4);
+    background-size: 100%;
+}
+
+
+.header-index, footer {
+    background-color: #F9CD23;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-index .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.contenedor-logo .logo {
+    width: 100px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    font-family: "Gloria Hallelujah";
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "Gloria Hallelujah";
+    color: #fff;
+}
+
+.menu li a:hover {
+    color: black;
+}
+
+.div-img-index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.img-comunidad{
+    border-radius: 20px;
+}
+
+.div-img-index .img-comunidad,
+.div-img-index .index-img {
+    
+    height: 25rem;
+}
+
+main section {
+    text-align: center;
+    margin: 20px 50px;
+}
+
+main section .div-botones{
+    text-align: center;
+}
+
+mian section .section-nosotros{
+    text-align: left;
+}
+
+main section h4 {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 40px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+main section p {
+    font-size: 20px;
+    line-height: 1.6;
+    color:white;
+}
+
+main section .img-nosotros{
+    height: 10rem;
+}
+
+main section div button {
+     background-color: #F9CD23;
+    color: #fff;
+    border: none;
+    padding: 20px 30px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 10px;
+    font-family:'Gloria Hallelujah' ;
+    color: #fff;
+}
+
+main section div button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main section div button:hover {
+    background-color: #F9CD23;
+}
+
+main section div button:hover a {
+    color: #fff;
+}
+
+footer {
+    color: #000;
+    padding: 20px 0;
+}
+
+footer .div-titulos-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px;
+}
+
+footer .contacto {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 24px;
+    margin: 0;
+}
+
+footer .png-footer {
+    width: 100px;
+}
+
+footer a.img-contacto img {
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+footer a.img-contacto img:hover {
+    transform: scale(1.2);
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/*estilos blog*/
+
+/* Estilos del main */
+main {
+    padding: 40px 20px;
+    flex-grow: 1;
+}
+
+.h-blog {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 32px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Estilos de las publicaciones */
+.post {
+    display: flex;
+    align-items: flex-start;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+    margin-right: 20px;
+}
+
+.image-container img {
+    border-radius: 50%;
+    width: auto;
+    height: 3rem;
+    object-fit: cover;
+
+}
+
+.content h2 {
+    font-size: 20px;
+    color: #333;
+    margin: 0 0 10px 0;
+}
+.h-user{
+    text-align: left;
+
+}
+.content p {
+    font-size: 14px;
+    color: #666;
+    text-align: left;
+}
+
+
+/* style.css */
+
+body {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.body-index{
+    background: linear-gradient(180deg, #e9c296, #db81a4);
+    background-size: 100%;
+}
+
+
+.header-index, footer {
+    background-color: #F9CD23;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-index .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.contenedor-logo .logo {
+    width: 100px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    font-family: "Gloria Hallelujah";
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "Gloria Hallelujah";
+    color: #fff;
+}
+
+.menu li a:hover {
+    color: black;
+}
+
+.div-img-index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.div-img-index .img-comunidad,
+.div-img-index .index-img {
+    
+    height: 25rem;
+}
+
+main section {
+    text-align: center;
+    margin: 20px 50px;
+}
+
+main section .div-botones{
+    text-align: center;
+}
+
+mian section .section-nosotros{
+    text-align: left;
+}
+
+main section h4 {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 40px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+main section p {
+    font-size: 20px;
+    line-height: 1.6;
+    color:white;
+}
+
+main section .img-nosotros{
+    height: 10rem;
+}
+
+main section div button {
+     background-color: #F9CD23;
+    color: #fff;
+    border: none;
+    padding: 20px 30px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 10px;
+    font-family:'Gloria Hallelujah' ;
+    color: #fff;
+}
+
+main section div button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main section div button:hover {
+    background-color: #F9CD23;
+}
+
+main section div button:hover a {
+    color: #fff;
+}
+
+footer {
+    color: #000;
+    padding: 20px 0;
+}
+
+footer .div-titulos-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px;
+}
+
+footer .contacto {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 24px;
+    margin: 0;
+}
+
+footer .png-footer {
+    width: 100px;
+}
+
+footer a.img-contacto img {
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+footer a.img-contacto img:hover {
+    transform: scale(1.2);
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/*estilos blog*/
+
+.post {
+    display: flex;
+    margin: 20px ;
+  
+    background-color: #fff; /* Fondo blanco para los posts */
+    border: 1px solid #F9CD23; /* Borde amarillo */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.image-container {
+    margin-right: 20px; /* Espacio entre la imagen y el contenido */
+}
+
+.image-container img {
+    width: 100px; /* Ajusta el tamaño de las imágenes */
+    border-radius: 50%; /* Bordes redondeados para las imágenes */
+}
+
+
+/* Animación para cambiar colores de los botones */
+@keyframes mover {
+    0% {
+        background-color: #F9CD23;
+    }
+    50% {
+        background-color:black;
+    }
+    100% {
+        background-color: #F9CD23;
+    }
+}
+
+button:hover {
+    animation: mover 0.5s forwards;
+}
+
+button:hover {
+    background-color: #F9CD23;
+    color: white;
+    transform: translateY(-5px);
+}
+
+/*estilos blog*/
+
+
+.h-blog{
+    margin: 2rem;
+    text-align: center;
+}
+
+
+/* Estilos de la tienda */
+.section-shop {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product img {
+    width: auto;
+    height: 15rem; /* Ajustar todas las imágenes al mismo alto */
+    
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product .button {
+    display: inline-block;
+    background-color: #F9CD23;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Gloria Hallelujah', cursive;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.product .button:hover {
+    background-color: black;
+    transform: translateY(-5px);
+    color: white;
+}
+
+/* Animación de los productos al pasar el cursor */
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .products {
+        grid-template-columns: 1fr; /* Una columna en pantallas muy pequeñas */
+    }
+}
+
+/* Sección Historia */
+.historia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    border-radius:40px;
+    background-color: #f4f4f4;
+}
+
+.historia .texto {
+    width: 60%;
+}
+
+.historia h1 {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.historia p {
+    font-size: 18px;
+    color: #666;
+    text-align: justify;
+   
+}
+
+.historia button {
+    padding: 10px 20px;
+    background-color: #F9CD23;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Gloria Hallelujah', cursive;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.historia button:hover {
+    background-color: black;
+    color: white;
+}
+
+.historia .imagen img {
+    
+    height: 20rem;
+
+    
+}
+
+/* Sección Temporadas */
+.temporadas {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas para las temporadas */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.temporada {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.temporada img {
+    width: 100px;
+    height: auto;
+    
+    margin-bottom: 10px;
+}
+
+.temporada h3 {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.temporada p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+
+
+/* Estilos para la sección de personajes */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.character {
+    display: flex;
+    gap: 20px;
+    background-color: #fff;
+    margin-bottom: 30px;
+    
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.character img {
+    width: auto;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.character div {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.character h2 {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.character p {
+    font-size: 20px;
+    color: #666;
+    line-height: 1.5;
+    text-align: left;
+    text-align: justify;
+    margin: 1rem;
+}
+
+
+
+/* Estilos generales */
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    background-color: #F9CD23;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.menu li a:hover {
+    color: #333;
+}
+
+/* Contenedor del formulario */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container h1 {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.login-container p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.login-container .register-link {
+    color: #F9CD23;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-container .register-link:hover {
+    text-decoration: underline;
+}
+
+/* Estilos del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+}
+
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #F9CD23;
+    outline: none;
+}
+
+/* Botón de iniciar sesión */
+.button {
+    padding: 12px;
+    background-color: #F9CD23;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #f5b620;
+}
+
+/* Estilo para las imágenes en el contenedor */
+.illustrations {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.illustrations img {
+    width: 60px;
+    height: auto;
+}
+
+/* Estilos footer */
+footer {
+    background-color: #F9CD23;
+    color: #333;
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+footer .div-titulos-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px;
+}
+
+footer .contacto {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 24px;
+}
+
+footer .png-footer {
+    width: 100px;
+}
+
+footer a.img-contacto img {
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+footer a.img-contacto img:hover {
+    transform: scale(1.2);
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .login-container {
+        padding: 20px;
+    }
+
+    .illustrations {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .button {
+        font-size: 14px;
+    }
+}
+
+.body-blog{
+    
+    background: linear-gradient(180deg, #e9c296, #db81a4);
+    background-size: 100%;
+
+}
+
+/* estilo contacto*/ 
+/* Contenedor del formulario */
+.contact-form {
+    width: 100%;
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-form h1 {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-form p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Estilos del formulario */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    border-color: #F9CD23;
+    outline: none;
+}
+
+/* Botón de enviar */
+.contact-form button {
+    padding: 12px;
+    background-color: #F9CD23;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #f5b620;
+}
