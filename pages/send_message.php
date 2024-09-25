@@ -21,7 +21,7 @@ $mensaje = $_POST['message'];
 // Preparar la consulta SQL para insertar los datos en la tabla 'mensajes'
 $sql = "INSERT INTO mensajes (nombre, email, mensaje) VALUES ('$nombre', '$email', '$mensaje')";
 
-// Ejecutar la consulta
+
 if ($conn->query($sql) === TRUE) {
     echo "Mensaje enviado exitosamente";
 } else {

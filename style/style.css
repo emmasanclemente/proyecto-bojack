@@ -39,6 +39,27 @@ body {
     font-family: "Gloria Hallelujah";
 }
 
+.menu-footer{
+    list-style: none;
+    text-align: justify;
+    gap: 2rem;
+    margin-left: 3.2rem;
+    padding: 0;
+    font-family: "Gloria Hallelujah";
+}
+
+.menu-footer li a{
+    text-decoration: none;
+    font-size: 15px;
+    font-family: "Gloria Hallelujah";
+    color: #000;
+    
+}
+
+.menu-footer li a:hover {
+    color: #fff;
+}
+
 .menu li a {
     text-decoration: none;
     color: #000;
@@ -103,7 +124,7 @@ main section div button {
      background-color: #F9CD23;
     color: #fff;
     border: none;
-    padding: 20px 30px;
+    padding: 100px 110px;
     margin: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
@@ -130,6 +151,11 @@ footer {
     padding: 20px 0;
 }
 
+footer .div-footer {
+    text-align: left;
+    
+}
+
 footer .div-titulos-footer {
     display: flex;
     justify-content: space-between;
@@ -139,7 +165,7 @@ footer .div-titulos-footer {
 
 footer .contacto {
     font-family: 'Gloria Hallelujah', cursive;
-    font-size: 24px;
+    font-size: 34px;
     margin: 0;
 }
 
@@ -194,10 +220,10 @@ main {
 }
 
 .image-container img {
-    border-radius: 50%;
+    border-radius: 10%;
     width: auto;
-    height: 3rem;
-    object-fit: cover;
+    height: 6rem;
+    object-fit: contain;
 
 }
 
@@ -486,6 +512,8 @@ button:hover {
     color: white;
 }
 
+
+
 /* Animación de los productos al pasar el cursor */
 .product:hover {
     transform: translateY(-5px);
@@ -754,6 +782,22 @@ input[type="email"]:focus,
 input[type="password"]:focus {
     border-color: #F9CD23;
     outline: none;
+}
+
+input[type="TEXT"]:focus,
+input[type="TEXT"]:focus {
+    border-color: #F9CD23;
+    outline: none;
+}
+
+input[type="TEXT"],
+input[type="TEXT"] {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s;
 }
 
 /* Botón de iniciar sesión */
