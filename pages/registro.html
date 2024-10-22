@@ -17,7 +17,7 @@
         </div>
           <ul class="menu">
             <li><a href="../index.html" >HOME</a></li>
-            <li><a href="../pages/blog.html" >BLOG</a></li>
+            <li><a href="../pages/blog.php" >BLOG</a></li>
             <li><a href="../pages/historia.html" >HISTORIA</a></li>
             <li><a href="../pages/personajes.html" >PERSONAJES</a></li>
             <li><a href="../pages/tu-cuenta.html" >TU CUENTA</a></li>
@@ -29,12 +29,12 @@
         <h1>Regístrate</h1>
         <p>Ya tenes cuenta? <a href="../pages/tu-cuenta.html" class="register-link">Inicia Sesion</a></p>
 
-        <form action="../pages/main.php" method="get">
-            <label for="name">NOMBRE</label>
-            <input type="text" id="TEXT" name="TEXT" placeholder="" required>
+        <form action="../pages/main.php" method="post">
+            <label for="fullname">NOMBRE</label>
+            <input type="text" id="fullname" name="fullname" placeholder="" required>
 
-            <label for="name">APELLIDO</label>
-            <input type="text" id="TEXT" name="TEXT" placeholder="" required>
+            <label for="lastname">APELLIDO</label>
+            <input type="text" id="lastname" name="lastname" placeholder="" required>
 
 
             <label for="email">EMAIL</label>
@@ -66,7 +66,7 @@
             <div>
                 <ul class="menu-footer">
                     <li><a href="../index.html" >HOME</a></li>
-                    <li><a href="../pages/blog.html" >BLOG</a></li>
+                    <li><a href="../pages/blog.php" >BLOG</a></li>
                     <li><a href="../pages/historia.html" >HISTORIA</a></li>
                     <li><a href="../pages/personajes.html" >PERSONAJES</a></li>
                     <li><a href="../pages/tu-cuenta.html" >TU CUENTA</a></li>

@@ -17,7 +17,7 @@
         </div>
           <ul class="menu">
             <li><a href="../index.html" >HOME</a></li>
-            <li><a href="../pages/blog.html" >BLOG</a></li>
+            <li><a href="../pages/blog.php" >BLOG</a></li>
             <li><a href="../pages/historia.html" >HISTORIA</a></li>
             <li><a href="../pages/personajes.html" >PERSONAJES</a></li>
             <li><a href="../pages/tu-cuenta.html" >TU CUENTA</a></li>
@@ -26,39 +26,26 @@
         </nav></header>
 
     <main>
-        <h1 class="h-blog">Blog</h1>
-
-        <section class="post">
-            <div class="image-container">
-                <img src="../img/peanut-personaje.png" alt="Imagen de usuario">
+        <div class="container">
+            <div id="commentSection">
+                <?php
+                include 'db.php';
+    
+                // Mostrar los comentarios de forma recursiva con una función separada
+                include 'comment_functions.php';
+                display_comments();  // Ahora la función está en otro archivo, más modular.
+                ?>
             </div>
-            <div class="content">
-                <h3 class="h-user">@emmasanclemente</h3>
-                <p>¿Alguien puede decirme el nombre de la melodía que suena de fondo cuando Bojack empieza a contarle a Diane una historia graciosa sobre la prisión, antes de la canción 'Mr. Blue'?"</p>
-            </div>
-        </section>
-
-        <section class="post">
-            <div class="image-container">
-                <img src="../img/caroline-personaje.png" alt="Imagen de usuario">
-            </div>
-            <div class="content">
-                <h3 class="h-user">@usuario-2</h3>
-                <p>do voluptate duis quis voluptate enim amet do do consectetur eu ex consequat pariatur deserunt eu consectetur Lorem exercitation eiusmod cupidatat veniam sunt in exercitation commodo aute c...</p>
-            </div>
-        </section>
-        <section class="post">
-            <div class="image-container">
-                <img src="../img/caroline-personaje.png" alt="Imagen de usuario">
-            </div>
-            <div class="content">
-                <h3 class="h-user">@usuario-3</h3>
-                <p>do voluptate duis quis voluptate enim amet do do consectetur eu ex consequat pariatur deserunt eu consectetur Lorem exercitation eiusmod cupidatat veniam sunt in exercitation commodo aute c...</p>
-            </div>
-        </section>
+            <form id="commentForm" action="post_comment.php" method="POST" enctype="multipart/form-data">
+                <textarea name="comentario" placeholder="Escribe tu comentario aquí..." required></textarea>
+                <input type="file" name="imagen" accept="image/*">
+                <button type="submit">Enviar Comentario</button>
+            </form>
+        </div>
+    
+        
     </main>
-
-
+    
     <footer>
         <section>
             <div class="div-titulos-footer">
@@ -71,7 +58,7 @@
             <div>
                 <ul class="menu-footer">
                     <li><a href="../index.html" >HOME</a></li>
-                    <li><a href="../pages/blog.html" >BLOG</a></li>
+                    <li><a href="../pages/blog.php" >BLOG</a></li>
                     <li><a href="../pages/historia.html" >HISTORIA</a></li>
                     <li><a href="../pages/personajes.html" >PERSONAJES</a></li>
                     <li><a href="../pages/tu-cuenta.html" >TU CUENTA</a></li>
@@ -90,5 +77,16 @@
             <p>Todos los derechos reservados - 2024</p>
         </section>
     </footer>
+    <script src="../js/script.js"></script>
+    <script src="../js/script.js" >
+        // Mostrar formulario de respuesta
+        function showReplyForm(commentId) {
+            const replyForm = document.getElementById('replyForm-' + commentId);
+            if (replyForm) {
+                replyForm.style.display = replyForm.style.display === 'none' ? 'block' : 'none';
+            }
+        }
+    </script>
+
 </body>
 </html>
