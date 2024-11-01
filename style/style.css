@@ -39,26 +39,7 @@ body {
     font-family: "Gloria Hallelujah";
 }
 
-.menu-footer{
-    list-style: none;
-    text-align: justify;
-    gap: 2rem;
-    margin-left: 3.2rem;
-    padding: 0;
-    font-family: "Gloria Hallelujah";
-}
 
-.menu-footer li a{
-    text-decoration: none;
-    font-size: 15px;
-    font-family: "Gloria Hallelujah";
-    color: #000;
-    
-}
-
-.menu-footer li a:hover {
-    color: #fff;
-}
 
 .menu li a {
     text-decoration: none;
@@ -187,21 +168,8 @@ footer p {
     margin: 5px 0;
 }
 
-/*estilos blog*/
 
-/* Estilos del main */
-main {
-    padding: 40px 20px;
-    flex-grow: 1;
-}
 
-.h-blog {
-    font-family: 'Gloria Hallelujah', cursive;
-    font-size: 32px;
-    color: #333;
-    text-align: center;
-    margin-bottom: 40px;
-}
 
 /* Estilos de las publicaciones */
 .post {
@@ -403,24 +371,113 @@ footer p {
 }
 
 /*estilos blog*/
+/* Estilos para el título de comentarios */
+h1 {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 36px;
+    color: #F9CD23;
+    text-align: center;
+    margin: 20px 0;
+    text-align: center;
+}
 
-.post {
+/* Estilos para el formulario de comentarios */
+#commentForm {
     display: flex;
-    margin: 20px ;
-  
-    background-color: #fff; /* Fondo blanco para los posts */
-    border: 1px solid #F9CD23; /* Borde amarillo */
-    border-radius: 8px; /* Bordes redondeados */
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
 }
 
-.image-container {
-    margin-right: 20px; /* Espacio entre la imagen y el contenido */
+#commentInput {
+    width: 80%;
+    max-width: 600px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    resize: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.image-container img {
-    width: 100px; /* Ajusta el tamaño de las imágenes */
-    border-radius: 50%; /* Bordes redondeados para las imágenes */
+button {
+    background-color: #F9CD23;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 16px;
 }
+
+button:hover {
+    background-color: #db81a4; /* Cambiar a un color más oscuro o diferente al pasar el ratón */
+}
+
+/* Estilos para la sección de comentarios */
+#comments {
+    margin-top: 20px;
+    max-width: 600px;
+    width: 80%;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.comment {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.comment h5 {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 18px;
+    margin: 0 0 5px 0;
+    color: #F9CD23;
+}
+
+.comment p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+/* Efecto de fade-in para los comentarios */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Efecto de fade-in para los comentarios */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+
+
 
 
 /* Animación para cambiar colores de los botones */
@@ -446,111 +503,7 @@ button:hover {
     transform: translateY(-5px);
 }
 
-/*estilos blog*/
-/* Sección de Comentarios */
-.comment-section {
-    margin: 40px auto;
-    max-width: 800px;
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 1s ease-in-out;
-}
 
-.comment-section h2 {
-    font-family: 'Gloria Hallelujah', cursive;
-    color: #333;
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-.comment-section form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.comment-section label {
-    font-size: 18px;
-    color: #333;
-}
-
-.comment-section textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    resize: none;
-    transition: border-color 0.3s;
-}
-
-.comment-section textarea:focus {
-    border-color: #F9CD23;
-    outline: none;
-}
-
-.comment-section button {
-    padding: 12px 20px;
-    background-color: #F9CD23;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 16px;
-    font-family: 'Gloria Hallelujah', cursive;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.comment-section button:hover {
-    background-color: #db81a4;
-    transform: translateY(-3px);
-}
-
-/* Estilo para los comentarios publicados */
-#comments .post {
-    margin: 20px 0;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-left: 5px solid #F9CD23;
-    border-radius: 10px;
-    transition: background-color 0.3s, box-shadow 0.3s;
-}
-
-#comments .post:hover {
-    background-color: #fff;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-#comments .h-user {
-    font-family: 'Gloria Hallelujah', cursive;
-    font-size: 20px;
-    color: #333;
-}
-
-#comments .content p {
-    font-size: 16px;
-    color: #666;
-}
-
-/* Animaciones */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
-.h-blog{
-    margin: 2rem;
-    text-align: center;
-}
 
 
 /* Estilos de la tienda */
@@ -632,6 +585,7 @@ button:hover {
 }
 
 /* Sección Historia */
+
 .historia {
     display: flex;
     justify-content: space-between;
@@ -725,6 +679,115 @@ button:hover {
 
 
 /* Estilos para la sección de personajes */
+
+/* Estilos para el buscador */
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.container h1 {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 36px;
+    color: #F9CD23;
+    margin-bottom: 20px;
+}
+
+.container form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.container input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.container input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #F9CD23;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.container input[type="submit"]:hover {
+    background-color: #db81a4;
+}
+
+/* Estilos para los resultados de búsqueda */
+.results {
+    margin-top: 20px;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.results h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.results ul {
+    list-style: none;
+    padding: 0;
+}
+
+.results ul li a {
+    color: #F9CD23;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.results ul li a:hover {
+    color: #db81a4;
+}
+
+/* Estilos para los personajes */
+.character {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.character img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.character h2 {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+}
+
+.character p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Ajustes de color y animación */
+.character:hover {
+    background-color: #f8f8f8;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -737,7 +800,7 @@ h1 {
     font-family: 'Gloria Hallelujah', cursive;
     font-size: 36px;
     color: #333;
-    margin-bottom: 40px;
+   margin-top: auto;
 }
 
 .character {
@@ -963,6 +1026,28 @@ footer a.img-contacto img:hover {
 
 footer p {
     margin: 5px 0;
+    text-align: center;
+}
+.menu-footer{
+    list-style: none;
+    text-align: justify;
+    display: flex;
+    gap: 2rem;
+    margin-left: 3.2rem;
+    padding: 0;
+    font-family: "Gloria Hallelujah";
+}
+
+.menu-footer li a{
+    text-decoration: none;
+    font-size: 15px;
+    font-family: "Gloria Hallelujah";
+    color: #000;
+    
+}
+
+.menu-footer li a:hover {
+    color: #fff;
 }
 
 
@@ -1000,7 +1085,7 @@ footer p {
     margin-bottom: 20px;
 }
 
-/* Estilos del formulario */
+/* Estilos del formulario index */
 .contact-form form {
     display: flex;
     flex-direction: column;

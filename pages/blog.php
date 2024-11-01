@@ -26,26 +26,38 @@
         </nav></header>
 
     <main>
-        <div class="container">
-            <div id="commentSection">
-                <?php
-                include 'db.php';
     
-                // Mostrar los comentarios de forma recursiva con una función separada
-                include 'comment_functions.php';
-                display_comments();  // Ahora la función está en otro archivo, más modular.
-                ?>
-            </div>
-            <form id="commentForm" action="post_comment.php" method="POST" enctype="multipart/form-data">
-                <textarea name="comentario" placeholder="Escribe tu comentario aquí..." required></textarea>
-                <input type="file" name="imagen" accept="image/*">
-                <button type="submit">Enviar Comentario</button>
-            </form>
-        </div>
+</head>
+<body>
+
+<h1>Comentarios sobre la Serie</h1>
+
+<form id="commentForm" onsubmit="event.preventDefault(); addComment(); this.submit();">
+    <textarea id="commentInput" name="comment" rows="4" required></textarea><br>
+    <button type="submit">Enviar</button>
+</form>
+
+<div id="comments">
+<?php
+    if ($result->num_rows > 0) {
+        // Salida de cada comentario
+        while($row = $result->fetch_assoc()) {
+            echo '<div class="comment fade-in"><h5>Usuario: ' . htmlspecialchars($row["usuario"]) . '</h5><p>' . htmlspecialchars($row["comentario"]) . '</p></div>';
+        }
+    } else {
+        echo "No hay comentarios aún.";
+    }
+    ?>
+</div>
+
+
+
+
+
+
     
         
-    </main>
-    
+   
     <footer>
         <section>
             <div class="div-titulos-footer">
@@ -77,16 +89,23 @@
             <p>Todos los derechos reservados - 2024</p>
         </section>
     </footer>
-    <script src="../js/script.js"></script>
-    <script src="../js/script.js" >
-        // Mostrar formulario de respuesta
-        function showReplyForm(commentId) {
-            const replyForm = document.getElementById('replyForm-' + commentId);
-            if (replyForm) {
-                replyForm.style.display = replyForm.style.display === 'none' ? 'block' : 'none';
-            }
+    
+    
+
+<script>
+        function addComment() {
+            const commentInput = document.getElementById('commentInput');
+            const commentDisplay = document.getElementById('comments');
+            const newComment = document.createElement('div');
+            newComment.classList.add('comment', 'fade-in');
+            newComment.innerHTML = `<h5>Usuario Anónimo:</h5><p>${commentInput.value}</p>`;
+            commentDisplay.prepend(newComment);
+            commentInput.value = '';
         }
     </script>
 
 </body>
 </html>
+<?php
+$conn->close();
+?>
