@@ -58,7 +58,7 @@
     
         
    
-    <footer>
+<footer>
         <section>
             <div class="div-titulos-footer">
                 <div>
@@ -72,12 +72,12 @@
                     <li><a href="../index.html" >HOME</a></li>
                     <li><a href="../pages/blog.php" >BLOG</a></li>
                     <li><a href="../pages/historia.html" >HISTORIA</a></li>
-                    <li><a href="../pages/personajes.html" >PERSONAJES</a></li>
+                    <li><a href="../pages/personajes.php" >PERSONAJES</a></li>
                     <li><a href="../pages/tu-cuenta.html" >TU CUENTA</a></li>
                     <li><a href="../pages/tienda.html" >TIENDA </a></li>
                   </ul>
             </div>
-            <div class="div">
+            <div>
                 <a class="img-contacto"><img src="../img/ig.svg" class="img-contacto" alt="instagram"></a>
                 <a class="img-contacto"> <img src="../img/wpp.svg" class="img-contacto" alt="facebook"></a>
                 <a class="img-contacto"><img src="../img/tiktok.svg" class="img-contacto" alt="tiktok"></a>

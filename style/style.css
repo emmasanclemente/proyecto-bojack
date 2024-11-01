@@ -94,6 +94,7 @@ main section h4 {
 main section p {
     font-size: 20px;
     line-height: 1.6;
+    font-family: 'Gloria Hallelujah';
     color:white;
 }
 
@@ -127,46 +128,6 @@ main section div button:hover a {
     color: #fff;
 }
 
-footer {
-    color: #000;
-    padding: 20px 0;
-}
-
-footer .div-footer {
-    text-align: left;
-    
-}
-
-footer .div-titulos-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 50px;
-}
-
-footer .contacto {
-    font-family: 'Gloria Hallelujah', cursive;
-    font-size: 34px;
-    margin: 0;
-}
-
-footer .png-footer {
-    width: 100px;
-}
-
-footer a.img-contacto img {
-    width: 30px;
-    margin: 0 10px;
-    transition: transform 0.3s;
-}
-
-footer a.img-contacto img:hover {
-    transform: scale(1.2);
-}
-
-footer p {
-    margin: 5px 0;
-}
 
 
 
@@ -211,26 +172,11 @@ footer p {
 }
 
 
-/* style.css */
-
-body {
-    font-family: 'Merriweather', serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-}
-
-.body-index{
-    background: linear-gradient(180deg, #e9c296, #db81a4);
-    background-size: 100%;
-}
 
 
-.header-index, footer {
-    background-color: #F9CD23;
-    padding: 20px 0;
-    text-align: center;
-}
+
+
+
 
 .header-index .nav {
     display: flex;
@@ -301,6 +247,7 @@ main section h4 {
 main section p {
     font-size: 20px;
     line-height: 1.6;
+    
     color:white;
 }
 
@@ -334,41 +281,8 @@ main section div button:hover a {
     color: #fff;
 }
 
-footer {
-    color: #000;
-    padding: 20px 0;
-}
 
-footer .div-titulos-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 50px;
-}
 
-footer .contacto {
-    font-family: 'Gloria Hallelujah', cursive;
-    font-size: 24px;
-    margin: 0;
-}
-
-footer .png-footer {
-    width: 100px;
-}
-
-footer a.img-contacto img {
-    width: 30px;
-    margin: 0 10px;
-    transition: transform 0.3s;
-}
-
-footer a.img-contacto img:hover {
-    transform: scale(1.2);
-}
-
-footer p {
-    margin: 5px 0;
-}
 
 /*estilos blog*/
 /* Estilos para el título de comentarios */
@@ -508,8 +422,8 @@ button:hover {
 
 /* Estilos de la tienda */
 .section-shop {
-    padding: 20px;
-    background-color: #f4f4f4;
+  
+    
 }
 
 .products {
@@ -522,7 +436,7 @@ button:hover {
 }
 
 .product {
-    background-color: #fff;
+    
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     padding: 20px;
@@ -629,14 +543,13 @@ button:hover {
     color: white;
 }
 
-.historia .imagen img {
-    
-    height: 20rem;
 
-    
-}
 
 /* Sección Temporadas */
+.h-blog{
+    text-align: center;
+    font-family: 'Gloria Hallelujah', cursive;
+}
 .temporadas {
     padding: 40px;
     display: grid;
@@ -656,10 +569,7 @@ button:hover {
 }
 
 .temporada img {
-    width: 200px;
-    height: 200px;
     
-    margin-bottom: 10px;
 }
 
 .temporada h3 {
@@ -677,188 +587,10 @@ button:hover {
 }
 
 
-
-/* Estilos para la sección de personajes */
-
-/* Estilos para el buscador */
-.container {
-    text-align: center;
-    padding: 20px;
+.img-t{
+height: 200rem;
 }
 
-.container h1 {
-    font-family: 'Gloria Hallelujah', cursive;
-    font-size: 36px;
-    color: #F9CD23;
-    margin-bottom: 20px;
-}
-
-.container form {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-.container input[type="text"] {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    width: 300px;
-}
-
-.container input[type="submit"] {
-    padding: 10px 20px;
-    background-color: #F9CD23;
-    border: none;
-    border-radius: 5px;
-    font-family: 'Gloria Hallelujah', cursive;
-    font-size: 16px;
-    cursor: pointer;
-    color: white;
-    transition: background-color 0.3s ease;
-}
-
-.container input[type="submit"]:hover {
-    background-color: #db81a4;
-}
-
-/* Estilos para los resultados de búsqueda */
-.results {
-    margin-top: 20px;
-    background-color: #f8f8f8;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.results h2 {
-    font-size: 24px;
-    color: #333;
-}
-
-.results ul {
-    list-style: none;
-    padding: 0;
-}
-
-.results ul li a {
-    color: #F9CD23;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.results ul li a:hover {
-    color: #db81a4;
-}
-
-/* Estilos para los personajes */
-.character {
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    margin-top: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.character img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-right: 20px;
-}
-
-.character h2 {
-    font-size: 24px;
-    color: #333;
-    margin: 0;
-}
-
-.character p {
-    font-size: 16px;
-    color: #666;
-}
-
-/* Ajustes de color y animación */
-.character:hover {
-    background-color: #f8f8f8;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px;
-    
-}
-
-h1 {
-    text-align: center;
-    font-family: 'Gloria Hallelujah', cursive;
-    font-size: 36px;
-    color: #333;
-   margin-top: auto;
-}
-
-.character {
-    display: flex;
-    gap: 20px;
-    background-color: #fff;
-    margin-bottom: 30px;
-    
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-}
-
-.character img {
-    width: auto;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.character div {
-    flex: 1;
-    padding-left: 20px;
-}
-
-.character h2 {
-    font-family: 'Gloria Hallelujah', cursive;
-    font-size: 28px;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.character p {
-    font-size: 20px;
-    color: #666;
-    line-height: 1.5;
-    text-align: left;
-    text-align: justify;
-    margin: 1rem;
-}
-
-
-
-/* Estilos generales */
-body {
-    font-family: 'Merriweather', serif;
-    background-color: #f9f9f9;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-header, footer {
-    background-color: #F9CD23;
-    padding: 20px 0;
-    text-align: center;
-}
 
 .menu {
     list-style: none;
@@ -1059,76 +791,3 @@ footer p {
 
 }
 
-/* estilo contacto*/ 
-/* Contenedor del formulario */
-.contact-form {
-    width: 100%;
-    max-width: 400px;
-    margin: 80px auto;
-    padding: 40px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.contact-form h1 {
-    font-family: 'Gloria Hallelujah', cursive;
-    font-size: 28px;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.contact-form p {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-/* Estilos del formulario index */
-.contact-form form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.contact-form label {
-    font-size: 14px;
-    color: #333;
-    text-align: left;
-}
-
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
-    padding: 10px;
-    width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
-    transition: border-color 0.3s;
-}
-
-.contact-form input[type="text"]:focus,
-.contact-form input[type="email"]:focus,
-.contact-form textarea:focus {
-    border-color: #F9CD23;
-    outline: none;
-}
-
-/* Botón de enviar */
-.contact-form button {
-    padding: 12px;
-    background-color: #F9CD23;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.contact-form button:hover {
-    background-color: #f5b620;
-}
