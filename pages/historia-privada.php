@@ -3,7 +3,7 @@ session_start();
 // Verificar si el usuario ya está logueado
 if (!isset($_SESSION['usuario_id'])) {
     // Si no está logueado, redirigir al inicio de sesión
-    header("Location: login.php");
+    header("Location: login.html");
     exit();
 }
 
@@ -21,6 +21,7 @@ if (!isset($_SESSION['usuario_id'])) {
     <title>Bojack Horseman</title>
 </head>
 <body class="body-blog">
+    
     <header class="header-index"><nav class="nav">
         <div class="contenedor-logo">
             <img src="../img/bojack-logo.png" class="logo" alt="">

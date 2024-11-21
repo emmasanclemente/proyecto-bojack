@@ -30,7 +30,7 @@
         <main>
         <div class="login-container">
         <h1>Regístrate</h1>
-        <p>Ya tenes cuenta? <a href="../pages/login.php" class="register-link">Inicia Sesion</a></p>
+        <p>Ya tenes cuenta? <a href="../pages/login.html" class="register-link">Inicia Sesion</a></p>
 
         <form action="../pages/main.php" method="post">
             <label for="fullname">NOMBRE</label>
