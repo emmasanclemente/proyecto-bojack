@@ -22,7 +22,7 @@
             <li><a href="../pages/creacion.html" >CREACION</a></li>
             <li><a href="../pages/historia.html" >HISTORIA</a></li>
             <li><a href="../pages/personajes.html" >PERSONAJES</a></li>
-            <li><a href="../pages/login.php" >TU CUENTA</a></li>
+            <li><a href="../pages/login.html" >TU CUENTA</a></li>
             <li><a href="../pages/TIENDA.html" >TIENDA </a></li>
           </ul>
         </nav>
@@ -72,7 +72,7 @@
                     <li><a href="../pages/creacion.html" >CREACION</a></li>
                     <li><a href="../pages/historia.html" >HISTORIA</a></li>
                     <li><a href="../pages/personajes.php" >PERSONAJES</a></li>
-                    <li><a href="../pages/login.php" >TU CUENTA</a></li>
+                    <li><a href="../pages/login.html" >TU CUENTA</a></li>
                     <li><a href="../pages/tienda.html" >TIENDA </a></li>
                   </ul>
             </div>
