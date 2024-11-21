@@ -17,37 +17,27 @@
         </div>
           <ul class="menu">
             <li><a href="../index.html" >HOME</a></li>
-            <li><a href="../pages/blog.php" >BLOG</a></li>
+            <li><a href="../pages/creacion.html" >CREACION</a></li>
             <li><a href="../pages/historia.html" >HISTORIA</a></li>
-            <li><a href="../pages/personajes.html" >PERSONAJES</a></li>
-            <li><a href="../pages/tu-cuenta.html" >TU CUENTA</a></li>
+            <li><a href="../pages/personajes.php" >PERSONAJES</a></li>
+            <li><a href="../pages/login.php" >TU CUENTA</a></li>
             <li><a href="../pages/TIENDA.html" >TIENDA </a></li>
           </ul>
         </nav></header>
         <main>
     <div class="login-container">
-        <h1>Regístrate</h1>
-        <p>Ya tenes cuenta? <a href="../pages/tu-cuenta.html" class="register-link">Inicia Sesion</a></p>
+        <h1>INICIO DE SESIÓN</h1>
+        <p>No tienes cuenta? <a href="../pages/registro.php" class="register-link">Regístrate</a></p>
 
-        <form action="../pages/main.php" method="post">
-            <label for="fullname">NOMBRE</label>
-            <input type="text" id="fullname" name="fullname" placeholder="" required>
-
-            <label for="lastname">APELLIDO</label>
-            <input type="text" id="lastname" name="lastname" placeholder="" required>
-
-
+        <form action="chequeo_login.php" method="POST">
             <label for="email">EMAIL</label>
             <input type="email" id="email" name="email" placeholder="hello@reallygreatsite.com" required>
-
 
             <label for="password">CONTRASEÑA</label>
             <input type="password" id="password" name="password" required>
 
-            <button type="submit" class="button">INICIAR</button>
+            <button type="submit" class="button"> INICIAR</button>
         </form>
-
-       
     </div>
     <div>
         <img src="../img/bojack-lentes.png" alt="">
@@ -66,10 +56,10 @@
             <div>
                 <ul class="menu-footer">
                     <li><a href="../index.html" >HOME</a></li>
-                    <li><a href="../pages/blog.php" >BLOG</a></li>
+                    <li><a href="../pages/creacion.html" >CREACION</a></li>
                     <li><a href="../pages/historia.html" >HISTORIA</a></li>
                     <li><a href="../pages/personajes.php" >PERSONAJES</a></li>
-                    <li><a href="../pages/tu-cuenta.html" >TU CUENTA</a></li>
+                    <li><a href="../pages/login.php" >TU CUENTA</a></li>
                     <li><a href="../pages/tienda.html" >TIENDA </a></li>
                   </ul>
             </div>
@@ -86,4 +76,6 @@
         </section>
     </footer>
 </body>
+
+
 </html>

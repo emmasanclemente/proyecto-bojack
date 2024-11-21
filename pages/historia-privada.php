@@ -1,3 +1,13 @@
+<?php
+session_start();
+// Verificar si el usuario ya está logueado
+if (!isset($_SESSION['usuario_id'])) {
+    // Si no está logueado, redirigir al inicio de sesión
+    header("Location: login.php");
+    exit();
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,6 +32,7 @@
             <li><a href="../pages/personajes.php" >PERSONAJES</a></li>
             <li><a href="../pages/login.php" >TU CUENTA</a></li>
             <li><a href="../pages/TIENDA.html" >TIENDA </a></li>
+            <li><a href="../pages/logout.php" class="logout" >CERRAR SESION </a></li>
           </ul>
         </nav></header>
  
@@ -89,13 +100,101 @@
             </div>
         </section>
 
-        <DIV class="div-inicio">
-            <h1>shhh.. para imagenes exclusivas</h1>
-            <button>
-                <a href="login.php" class="boton-historia">inicia sesion</a>
-            </button>
-             
-            </DIV>
+        <div class="carrusel">
+            <div class="imagenes">
+                <img src="https://i.redd.it/nj1h76j11ylb1.jpg" class="imagen-seccion" alt="Imagen 1">
+                <img src="https://www.overlyanimated.com/wp-content/uploads/2017/11/BoJackAsexual2.jpg" class="imagen-seccion" alt="Imagen 2">
+                <img src="https://i.redd.it/g8yrgq61mb8c1.jpeg" class="imagen-seccion" alt="Imagen 3">
+                <img src="https://m.media-amazon.com/images/M/MV5BNmMzNzI3Y2UtNjRjZi00OTE4LTk5ZjEtMmQyMDNmMjNkYWU3XkEyXkFqcGc@._V1_.jpg"  class="imagen-seccion" alt="imagen 4">
+                <img src="https://www.casaspammer.com/wp-content/uploads/2018/09/bojackhorseman5temporada.jpg" class="imagen-seccion" alt="Imagen 5">
+            </div>
+            <button class="nav-btn prev-btn">&#10094;</button>
+            <button class="nav-btn next-btn">&#10095;</button>
+        </div>
+        <div class="playlist">
+            <h3>pss aca abajo... escucha la playlist personal de Bojack</h3>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2EqWTcm6BofHTrFGUEC80k?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>   </div>
+         <div class="andate">
+            <h3>¿Esperás encontrar algo mejor si seguís scrolleando? Buena suerte con eso</h4>
+<img src="https://fcbk.su/_data/stickers/bojack_horseman/bojack_horseman_17.png" alt="">
+            <button class="btn-up" id="btnUp">⬆ </button>
+         </div>
+        <div class="modal">
+            <img class="modal-img" src="" alt="">
+            <div class="close">&times;</div>
+        </div>
+
+        <script>document.addEventListener('DOMContentLoaded', function () {
+            const imagenes = document.querySelectorAll('.imagen-seccion');
+            const modal = document.querySelector('.modal');
+            const modalImg = document.querySelector('.modal-img');
+            const closeBtn = document.querySelector('.close');
+            const prevBtn = document.querySelector('.prev-btn');
+            const nextBtn = document.querySelector('.next-btn');
+        
+            let currentIndex = 0;
+        
+            function updateCarousel() {
+                const offset = -currentIndex * 100; // Calcular el desplazamiento
+                document.querySelector('.imagenes').style.transform = `translateX(${offset}%)`; // Aplicar el desplazamiento
+            }
+        
+            function openModal() {
+                modal.style.display = 'flex'; // Mostrar el modal
+                modalImg.src = imagenes[currentIndex].src; // Establecer la imagen en el modal
+            }
+        
+            // Eventos para las imágenes
+            imagenes.forEach((imagen, index) => {
+                imagen.addEventListener('click', function () {
+                    currentIndex = index; // Guardar el índice de la imagen actual
+                    openModal(); // Abrir el modal
+                });
+            });
+        
+            // Evento para el botón de cerrar el modal
+            closeBtn.addEventListener('click', function () {
+                modal.style.display = 'none'; // Ocultar el modal
+            });
+        
+            // Navegación del carrusel
+            prevBtn.addEventListener('click', function () {
+                currentIndex = (currentIndex > 0) ? currentIndex - 1 : imagenes.length - 1; // Ir a la imagen anterior
+                updateCarousel(); // Actualizar el carrusel
+            });
+        
+            nextBtn.addEventListener('click', function () {
+                currentIndex = (currentIndex < imagenes.length - 1) ? currentIndex + 1 : 0; // Ir a la imagen siguiente
+                updateCarousel(); // Actualizar el carrusel
+            });
+        
+            // Cerrar el modal al hacer clic fuera de la imagen
+            modal.addEventListener('click', function () {
+                modal.style.display = 'none'; 
+            });
+        });
+
+     // Referencia al botón
+const btnUp = document.getElementById('btnUp');
+
+// Mostrar el botón cuando se scrollea hacia abajo
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 2100) { 
+        btnUp.classList.add('visible');
+    } else {
+        btnUp.classList.remove('visible');
+    }
+});
+
+// Función para volver arriba
+btnUp.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' 
+    });
+});
+
+        </script>
     </main>
 
     <footer>
@@ -110,11 +209,12 @@
             <div>
                 <ul class="menu-footer">
                     <li><a href="../index.html" >HOME</a></li>
-                    <li><a href="../pages/creacion.html" >LA CREACION</a></li>
+                    <li><a href="../pages/creacion.html" > CREACION</a></li>
                     <li><a href="../pages/historia.html" >HISTORIA</a></li>
                     <li><a href="../pages/personajes.php" >PERSONAJES</a></li>
                     <li><a href="../pages/login.php" >TU CUENTA</a></li>
                     <li><a href="../pages/tienda.html" >TIENDA </a></li>
+                    <li><a href="../pages/logout.php" class="logout" >CERRAR SESION </a></li>
                   </ul>
             </div>
             <div>

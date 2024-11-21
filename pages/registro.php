@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,54 +12,52 @@
     <title>Bojack Horseman</title>
 </head>
 <body class="body-blog">
-    <header class="header-index"><nav class="nav">
+    <header class="header-index">
+        <nav class="nav">
         <div class="contenedor-logo">
             <img src="../img/bojack-logo.png" class="logo" alt="">
         </div>
           <ul class="menu">
             <li><a href="../index.html" >HOME</a></li>
-            <li><a href="../pages/blog.php" >BLOG</a></li>
+            <li><a href="../pages/creacion.html" >CREACION</a></li>
             <li><a href="../pages/historia.html" >HISTORIA</a></li>
             <li><a href="../pages/personajes.html" >PERSONAJES</a></li>
-            <li><a href="../pages/tu-cuenta.html" >TU CUENTA</a></li>
+            <li><a href="../pages/login.php" >TU CUENTA</a></li>
             <li><a href="../pages/TIENDA.html" >TIENDA </a></li>
           </ul>
-        </nav></header>
+        </nav>
+    </header>
+        <main>
+        <div class="login-container">
+        <h1>Regístrate</h1>
+        <p>Ya tenes cuenta? <a href="../pages/login.php" class="register-link">Inicia Sesion</a></p>
 
-    <main>
-    
-</head>
-<body>
+        <form action="../pages/main.php" method="post">
+            <label for="fullname">NOMBRE</label>
+            <input type="text" id="fullname" name="fullname" placeholder="" required>
 
-<h1>Comentarios sobre la Serie</h1>
-
-<form id="commentForm" onsubmit="event.preventDefault(); addComment(); this.submit();">
-    <textarea id="commentInput" name="comment" rows="4" required></textarea><br>
-    <button type="submit">Enviar</button>
-</form>
-
-<div id="comments">
-<?php
-    if ($result->num_rows > 0) {
-        // Salida de cada comentario
-        while($row = $result->fetch_assoc()) {
-            echo '<div class="comment fade-in"><h5>Usuario: ' . htmlspecialchars($row["usuario"]) . '</h5><p>' . htmlspecialchars($row["comentario"]) . '</p></div>';
-        }
-    } else {
-        echo "No hay comentarios aún.";
-    }
-    ?>
-</div>
+            <label for="lastname">APELLIDO</label>
+            <input type="text" id="lastname" name="lastname" placeholder="" required>
 
 
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" name="email" placeholder="hello@reallygreatsite.com" required>
 
 
+            <label for="password">CONTRASEÑA</label>
+            <input type="password" id="password" name="password" required>
 
+            <button type="submit" class="button">INICIAR</button>
+        </form>
 
-    
-        
-   
-<footer>
+       
+    </div>
+    <div>
+        <img src="../img/bojack-lentes.png" alt="">
+       </div>
+       
+</main>
+    <footer>
         <section>
             <div class="div-titulos-footer">
                 <div>
@@ -70,10 +69,10 @@
             <div>
                 <ul class="menu-footer">
                     <li><a href="../index.html" >HOME</a></li>
-                    <li><a href="../pages/blog.php" >BLOG</a></li>
+                    <li><a href="../pages/creacion.html" >CREACION</a></li>
                     <li><a href="../pages/historia.html" >HISTORIA</a></li>
                     <li><a href="../pages/personajes.php" >PERSONAJES</a></li>
-                    <li><a href="../pages/tu-cuenta.html" >TU CUENTA</a></li>
+                    <li><a href="../pages/login.php" >TU CUENTA</a></li>
                     <li><a href="../pages/tienda.html" >TIENDA </a></li>
                   </ul>
             </div>
@@ -89,23 +88,5 @@
             <p>Todos los derechos reservados - 2024</p>
         </section>
     </footer>
-    
-    
-
-<script>
-        function addComment() {
-            const commentInput = document.getElementById('commentInput');
-            const commentDisplay = document.getElementById('comments');
-            const newComment = document.createElement('div');
-            newComment.classList.add('comment', 'fade-in');
-            newComment.innerHTML = `<h5>Usuario Anónimo:</h5><p>${commentInput.value}</p>`;
-            commentDisplay.prepend(newComment);
-            commentInput.value = '';
-        }
-    </script>
-
 </body>
 </html>
-<?php
-$conn->close();
-?>

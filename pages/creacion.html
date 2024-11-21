@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/creacion.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900&display=swap" rel="stylesheet">
+    <title>Creación - BoJack Horseman</title>
+</head>
+<body class="body-creacion">
+    <header class="header-index">
+        <nav class="nav">
+            <div class="contenedor-logo">
+                <img src="../img/bojack-logo.png" class="logo" alt="BoJack Horseman Logo">
+            </div>
+            <ul class="menu">
+                <li><a href="../index.html" >HOME</a></li>
+                <li><a href="../pages/creacion.html" >CREACION</a></li>
+                <li><a href="../pages/historia.html" >HISTORIA</a></li>
+                <li><a href="../pages/personajes.php" >PERSONAJES</a></li>
+                <li><a href="../pages/login.php" >TU CUENTA</a></li>
+                <li><a href="../pages/TIENDA.html" >TIENDA </a></li>
+              </ul>
+        </nav>
+    </header>
+    <main >
+        <h1 class="titulo-video">La Creación</h1>
+        <div class="contenido-creacion">
+            <div class="caja">
+                <h1>Creación de BoJack Horseman</h1>
+                <p>BoJack Horseman es una serie creada por Raphael Bob-Waksberg, con un estilo visual único desarrollado por la ilustradora Lisa Hanawalt. La serie, lanzada en 2014, combina humor oscuro y temas profundos, abordando temas como la fama, la depresión y la autodestrucción.</p>
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgC-omD3CKP2Voxgyka7etK7VksEljqNWXqdoZdusIGJYYGRySc5MjvesjH6YUgMPFvhpjgU0ipm4KpRG8nW-YMseGTnwvhy-9eY_n-3sMP3-DOA3VUZtuMvSCpvfufV-LucRDgf1jO5IE/s1600/BoJackHorseman_p021d.jpg" alt="Título de BoJack Horseman" class="imagen-seccion">
+            </div>
+        
+            <div class="caja">
+                <h2>Inspiración y Temática</h2>
+                <p>La serie aborda temas complejos como la adicción, la salud mental y las relaciones disfuncionales. A través de sus personajes, BoJack Horseman explora la lucha interna y el vacío que muchas veces se esconde detrás de la fama y el éxito. Esta combinación de humor y tragedia ha sido una de las razones por las que la serie ha ganado una gran base de fans y ha sido ampliamente aclamada por la crítica.</p>
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgiaD06bFUr9R-Oo3aH37RXgbhfowxWPg9ukVlYMLqkmwpflsy0sAw8WGjQURU7gGR47AlvPWyk038weMttpLtV7E6hTEDlR4xOyMpttd4elrQjN1nccEQsCWWFZZnO3nVE7kM2Emlh0PY/s1600/BoJackHorseman_p091.jpg" alt="Personajes de BoJack Horseman" class="imagen-seccion">
+            </div>
+        
+            <div class="caja ">
+                <h2>El Estilo Visual</h2>
+                <p>El estilo de animación de BoJack Horseman es minimalista y peculiar, diseñado por Lisa Hanawalt. Los personajes antropomórficos se combinan con humanos en un mundo donde las reglas de la realidad son flexibles, pero al mismo tiempo reflejan problemas humanos reales. La animación permite explorar estos temas de manera visualmente atractiva, con un diseño que es tanto encantador como profundamente introspectivo.</p>
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8GOksAxTXxnqjNpY4FwIkxt9xckNxDRFUL7AzIih0AHjZHP2bqDrVM0mlJDLkEzRMGeWyPPzu-fLBi1W5m9E0Xiup7nUTXYiJe0Trdft1uleCER2HL1AL-t41-sJUgpo9xAP1dLmQv18/s1600/BoJackHorseman_p147a.jpg" alt="BoJack en su set" class="imagen-seccion">
+            </div>
+        </div>
+
+        <div class="seccion-video">
+            <h2 class="titulo-video">Queres conocer mas?</h2>
+            <div class="video">
+                <iframe  src="https://www.youtube.com/embed/z42p3s-cueg?si=n90ycq4JLretCKgq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const imagenes = document.querySelectorAll('.imagen-seccion');
+            const modal = document.createElement('div');
+            modal.classList.add('modal');
+    
+            const closeBtn = document.createElement('div');
+            closeBtn.classList.add('close');
+            closeBtn.innerHTML = '&times;'; // Cruz para cerrar
+    
+            const modalImg = document.createElement('img');
+            modal.appendChild(modalImg);
+            modal.appendChild(closeBtn);
+    
+            // Botones de navegación
+            const prevBtn = document.createElement('div');
+            prevBtn.classList.add('nav-btn', 'prev-btn');
+            prevBtn.innerHTML = '&#10094;'; // Flecha izquierda
+            modal.appendChild(prevBtn);
+    
+            const nextBtn = document.createElement('div');
+            nextBtn.classList.add('nav-btn', 'next-btn');
+            nextBtn.innerHTML = '&#10095;'; // Flecha derecha
+            modal.appendChild(nextBtn);
+    
+            document.body.appendChild(modal);
+    
+            let currentImageIndex;
+    
+            imagenes.forEach((imagen, index) => {
+                imagen.addEventListener('click', function () {
+                    currentImageIndex = index; // Guardar el índice de la imagen actual
+                    modalImg.src = this.src; // Establecer la imagen en el modal
+                    modal.style.display = 'flex'; // Mostrar el modal
+                });
+            });
+    
+            // Navegación a la imagen anterior
+            prevBtn.addEventListener('click', function (e) {
+                e.stopPropagation(); // Evitar cerrar el modal al hacer clic en las flechas
+                currentImageIndex = (currentImageIndex > 0) ? currentImageIndex - 1 : imagenes.length - 1; // Ir a la imagen anterior
+                modalImg.src = imagenes[currentImageIndex].src; // Cambiar la imagen
+            });
+    
+            // Navegación a la imagen siguiente
+            nextBtn.addEventListener('click', function (e) {
+                e.stopPropagation(); // Evitar cerrar el modal al hacer clic en las flechas
+                currentImageIndex = (currentImageIndex < imagenes.length - 1) ? currentImageIndex + 1 : 0; // Ir a la imagen siguiente
+                modalImg.src = imagenes[currentImageIndex].src; // Cambiar la imagen
+            });
+    
+            closeBtn.addEventListener('click', function () {
+                modal.style.display = 'none'; // Ocultar el modal
+            });
+    
+            modal.addEventListener('click', function () {
+                modal.style.display = 'none'; // Ocultar el modal si se hace clic fuera de la imagen
+            });
+        });
+    </script>
+    
+        
+    <footer>
+        <section>
+            <div class="div-titulos-footer">
+                <div>
+                    <h5 class="contacto">Contacto</h5>
+                </div>
+                <img src="../img/bojack-logo.png" alt="BoJack Horseman Logo" class="png-footer">
+            </div>
+            <div>
+                <ul class="menu-footer">
+                    <li><a href="../index.html" >HOME</a></li>
+                    <li><a href="../pages/creacion.html" >CREACION</a></li>
+                    <li><a href="../pages/historia.html" >HISTORIA</a></li>
+                    <li><a href="../pages/personajes.php" >PERSONAJES</a></li>
+                    <li><a href="../pages/login.php" >TU CUENTA</a></li>
+                    <li><a href="../pages/tienda.html" >TIENDA </a></li>
+                  </ul>
+            </div>
+            <div>
+                <a href="#"><img src="../img/ig.svg" class="img-contacto" alt="Instagram"></a>
+                <a href="#"><img src="../img/wpp.svg" class="img-contacto" alt="WhatsApp"></a>
+                <a href="#"><img src="../img/tiktok.svg" class="img-contacto" alt="TikTok"></a>
+            </div>
+            <p>Dirección - Emilio Lamarca 315, Martínez</p>
+            <p>Teléfono - +541140853626</p>
+            <p>Todos los derechos reservados - 2024</p>
+        </section>
+    </footer>
+</body>
+</html>

@@ -55,10 +55,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <ul class="menu">
                 <li><a href="../index.html">HOME</a></li>
-                <li><a href="../pages/blog.php">BLOG</a></li>
+                <li><a href="../pages/creacion.php">CREACION</a></li>
                 <li><a href="../pages/historia.html">HISTORIA</a></li>
                 <li><a href="../pages/personajes.html">PERSONAJES</a></li>
-                <li><a href="../pages/tu-cuenta.html">TU CUENTA</a></li>
+                <li><a href="../pages/login.php">TU CUENTA</a></li>
                 <li><a href="../pages/tienda.html">TIENDA</a></li>
             </ul>
         </nav>
@@ -67,7 +67,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <main>
         <section>
             <div class="container">
-            <h1>Personajes</h1>
+            <h1 class="h-blog">Personajes</h1>
                 <div class="search-box">
                     <form method="post" action="">
                         <input type="text" id="search-input" name="search" placeholder="Buscar personaje..." value="<?php echo htmlspecialchars($search); ?>" required>
@@ -77,15 +77,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div>
 
                 <div class="results">
-                    <h2>Resultados de búsqueda:</h2>
+                  
                     <?php if (!empty($results)): ?>
-                        <ul>
+                        
                             <?php foreach ($results as $result): ?>
                                 <li><a href="#<?php echo $result['id']; ?>"><?php echo htmlspecialchars($result['name']); ?></a></li>
                             <?php endforeach; ?>
-                        </ul>
-                    <?php else: ?>
-                        <p>No se encontraron personajes.</p>
+                        
+                    
                     <?php endif; ?>
                 </div>
 
@@ -115,10 +114,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div>
                 <ul class="menu-footer">
                     <li><a href="../index.html" >HOME</a></li>
-                    <li><a href="../pages/blog.php" >BLOG</a></li>
+                    <li><a href="../pages/creacion.html" >CREACION</a></li>
                     <li><a href="../pages/historia.html" >HISTORIA</a></li>
                     <li><a href="../pages/personajes.php" >PERSONAJES</a></li>
-                    <li><a href="../pages/tu-cuenta.html" >TU CUENTA</a></li>
+                    <li><a href="../pages/login.php" >TU CUENTA</a></li>
                     <li><a href="../pages/tienda.html" >TIENDA </a></li>
                   </ul>
             </div>
@@ -128,7 +127,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <a class="img-contacto"><img src="../img/tiktok.svg" class="img-contacto" alt="tiktok"></a>
             </div>
            
-        
+     
             <p>Dirrecion - Emilio Lamarca 315, Martínez</p>
             <p>Telefono - +541140853626</p>
             <p>Todos los derechos reservados - 2024</p>
