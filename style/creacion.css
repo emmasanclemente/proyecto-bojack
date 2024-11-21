@@ -92,10 +92,7 @@ body {
     to { opacity: 1; }
 }
 
-/* Estilos del menú */
-.menu li a {
-    
-}
+
 
 .menu li a::before {
   
